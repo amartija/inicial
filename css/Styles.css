@@ -1,0 +1,136 @@
+#wrapper{
+    position: relative;
+    top:95px;
+}
+
+.flex-container{
+    display: flex;
+}
+main{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.table-row{
+    display: -webkit-flex;
+    display: inline-flex;
+    display: flex;
+}
+
+.wrapper{
+    display: -webkit-flex;
+    display: inline-flex;
+    display: flex;
+
+}
+
+.colum{
+    -webkit-flex-grow: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    vertical-align: top;
+
+}
+.index{
+    width: 15px;
+}
+.name-surname-dni{}
+.email-telephone{
+-webkit-flex-grow: 1;
+    flex-grow: 1;
+}
+.name-surname{}
+.address-city-zip_code{}
+
+.date-of-birth{
+    width: 10px;
+}
+.dni{
+    width: 50px;
+}
+.surname{
+    width: 150px;
+}
+
+.header{
+    background-color: blue;
+    color: black;
+}
+/*movil*/
+@media only screen and (min-width : 320px){
+    .name-surname-dni-date_of_birth,
+    .address-city-zip_code,
+    .email-telephone,
+    .name-surname-dni,
+    .name-surname{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .name-surname-dni-date_of_birth,
+
+
+
+    .name-surname-dni{}
+    .email-telephone{    }
+    .address-city-zip_code{
+        flex-direction:column;
+
+    }
+}
+@media only screen and (min-width : 480px){
+    .name-surname {
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+}
+@media only screen and (min-width : 768px){
+    .name-surname-dni{
+        align-items:center;
+    }
+
+
+}
+/*pantalla completa*/
+@media only screen and (min-width : 992px){
+
+    .email-telephone{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .name-surname{
+        ;
+    }
+}
+
+.fa-facebook-square{
+    color: #282c64;
+    font-size: 50px;
+
+}
+.fa-facebook-square:hover{
+    color:deeppink;
+}
+
+ul.rrss li{
+    background-image: url(../img/spites-logos.png);
+    background-repeat: no-repeat;
+    width:39px;
+    height: 39px;
+
+}
+
+.linkedin{
+    background-position: -156px -39px;
+}
+
+.linkedin:hover{
+    background-position: -156px -78px;
+}
+
+.twitter{
+    background-position: -155px -78px;
+}

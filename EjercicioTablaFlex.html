@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css?v=20170428">
+    <link rel="stylesheet" href="css/Styles.css?v=20170428">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<header>
+
+    <h1>FlexEjercicio</h1>
+
+</header>
+
+<nav class="flex-container">
+    <ul class="flex-container">
+        <li><a href = "#tabla">Tabla</a></li>
+
+    </ul>
+
+</nav>
+<div id = "wrapper">
+    <main>
+        <section class = "flex-container">
+            <header><h2>FlexEjercicio</h2></header>
+        </section>
+        <section id = "tablaFlex">
+            <header><h2>Tabla Responsive Con Flex</h2></header>
+            <div id="datosAlumnos">
+                <div class="table-row header">
+
+                    <div class="colum index"><input type="checkbox" valeue="-1" name = "codigo"></div>
+                    <div class="wrapper name-surname-dni">
+                        <div class="wrapper name-surname">
+                            <div class="colum name">Nombre</div>
+                            <div class="colum surname">Apellidos</div>
+                        </div>
+                        <div class="colum dni">DNI</div>
+                    </div>
+                    <div class="wrapper email-telephone">
+                        <div class="colum email">Email</div>
+                        <div class="colum telephone">Telefono</div>
+                    </div>
+                    <div class="colum date-of-birth">F.Nacimiento</div>
+                    <div class="wrapper address-city-zip_code">
+                        <div class="colum address">Direccion</div>
+                        <div class="colum city">Poblacion</div>
+                        <div class="colum zip_code">C.P.</div>
+                    </div>
+                    <div class ="wrapper actions">
+                        <div><a data-codigo= "2" href ="#">Editar</a></div>
+                        <div><a data-codigo= "2" href ="#">Borrar</a></div>
+                    </div>
+
+                </div>
+                <div class="table-row">
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <!-- WAI -ARIA -->
+        RRSS:<span class="fa fa-facebook-square" aria-hidden="true"></span>
+        <ul class="rrss">
+            <li class ="linkedin"><a href =""><img alt ="linkedin"  src="img/1x1.png"></a></li>
+            <li class="twitter"></li>
+
+        </ul>
+    </footer>
+
+</div>
+
+
+</body>
+</html>
+

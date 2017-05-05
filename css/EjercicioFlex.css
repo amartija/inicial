@@ -1,10 +1,3 @@
-/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -90,186 +83,152 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-*{
+/*
+************* ESTILOS GENERALES DE LA PÁGINA******************
+*/
+/**
+Los selectores CSS: clase: .nombre_clase html tag: tag id: #nombreid
+*/
+html{
     font-size: 16px;
     color: black;
+}
+h1,h2,h3,h4,h5,h6,ol,ul{
+    margin: 0;
+    padding: 0;
 
 }
-
-section{
-    padding: 50px;
-
-}
-
-section:nth-child(odd){
-    background-color: grey ;
-}
-
-section:nth-child(even){
-    background-color: cornflowerblue ;
-}
-#ejer1 article{
-    box-sizing:border-box;
-    width: calc(100%/3);/*le doy el ancho*/
-    float: left;
-    padding-left: 20px;/*separacion entre bloques*/
-}
-#ejer1 article > div{
-    float:left;
-    width:75%;
-    box-sizing:border-box;
-    min-height: 200px;
-}
-
-#ejer1 article > div:last-child{
-    width:20%;
-    padding-left: 10px;
-    font-size: 90%;
-    box-sizing: border-box;
-}
-
-#ejer1 article > div button{
-    height: 35px;
-
-}
-#ejer1 article > div div {
-    height: calc(200px - 35px);
-}
-
-button{
-    border-radius: 5px;
-    background-color: darkslategrey;
-}
-
-
 h1,h2{
-    color: #b3d4fc;
+    color:#2e6da4;
 }
-
 h1{
-
     text-align: center;
-    font-size: 120%;
-    font-weight: bold;
-
+    font-size: 200%;
+    font-weight: bold;/* BOLDER*/
 }
-/* Selectores css : clase:.nombre clase hatml tag : tag***/
-.lft{
-    float: left;
+h2,h3{
+    heigth:33px;
 }
-.clb{
-    clear: both;
+a{
+    color: #606034;
+    text-decoration: none;
+}
+button {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
 }
 
 p{
     text-align: justify;
 }
 
-table{
-    width: 100%;
-    border-width: 5px;
-    border-style: groove;
-    border-color: bisque;
-}
-
-table caption{
-    visibility: hidden;
-}
-
-table:hover caption{
-    visibility: visible;
-}
-
-table th, table td{
-
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
-
-}
-
-table tfoot tr, table thead tr{
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
-}
-
-table tfoot td{
-    border: none;
-
-}
-/*****  MAQUETACION TABL****/
-/***** MAQUETACION DEL MENU*****/
-nav ul li{
-
-    float: left;
-    width: 150px;/*tamaño de ancho d ela pantalla*/
-    text-align: center;/*posicion en la pantalla*/
-    list-style:none;
-    border: 1px solid white;/*lo de arriba del tiron*/
-    background-color: #282c64;/*color de fondo*/
-    padding: 5px;
-    border: 1px solid white;
-    border-radius: 10px;
-    height: 40px;
-    transition: background-color 2s;
-
-}
-
-nav ul{
-    margin: 0 auto;
-    width: 800px;
-}
-
-nav ul li:hover{
-    background-color: aquamarine;/*cuando pasa por encima del boton*/
-
-}
-
-/*****MAQUETACION DE LAYOUT ****/
+/**** MAQUETACIÓN DE LAYOUT*******/
 nav{
-    position: fixed;
+
     top: 0;
-    height: 60px;
+    height: 40px;
     z-index: 8000;
     width: 100%;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bfd255+0,286016+23,0cbc00+57,0cbc00+75,0cbc00+76,0cbc00+78,72aa00+87,00fc08+87,9ecb2d+100 */
-    background: #bfd255; /* Old browsers */
-    background: -moz-linear-gradient(top, #d2967f 0%, #342660 23%, #7d4cbc 57%, #0cbc00 75%, #0cbc00 76%, #0cbc00 78%, #72aa00 87%, #00fc08 87%, #9ecb2d 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #bfd255 0%,#286016 23%,#0cbc00 57%,#0cbc00 75%,#0cbc00 76%,#0cbc00 78%,#72aa00 87%,#00fc08 87%,#9ecb2d 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #bfd255 0%,#286016 23%,#0cbc00 57%,#0cbc00 75%,#0cbc00 76%,#0cbc00 78%,#72aa00 87%,#00fc08 87%,#9ecb2d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d',GradientType=0 ); /* IE6-9 */
-
-}
+    flex-direction: row;
+    justify-content: center;
+   }
 
 #wrapper{
     position: relative;
-    top: 60px;
+    top: 40px;
 }
-.flex-container{
-    display: flex;
 
+/*** maquetacion de menu ****/
+nav ul{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#397230+0,53b701+34,78cc84+70,4ab251+100 */
+    flex-direction: row;
+    justify-content: center;
+}
+nav ul li{/*al li que esta dentro de un ul que esta dentro del nav   */
+    height: 30px;
+
+    width: 150px;/*un ancho a cada uno */
+    text-align: center;/* que el texto este centrado en su "caja"*/
+    list-style: none;/* le quitamos el disc de la lista*/
+    /* border-color: white;
+     border-style: solid;
+     border-width: 1px;*/
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid white; /* lo de arriba del tiron*/
+    background-color: #4932ff; /* color de fondo*/
+    transition:  background-color 2s;/* para que el efecto de cambio sea de 2 segundos */
+}
+nav ul li:hover{/*psedo selector que activa cuando el raton por encima */
+    background-color: aquamarine;
+    /*   font-size: 22px;*/
+}
+
+/*** MAQUETACION SECCIONES *****/
+
+
+section{
+    padding: 50px; /* padding-left: 50px; padding-right:50px....*/
+    background-color: gainsboro;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
 }
 main section:last-child{
     /*display: flex;*/
     flex-wrap: wrap;
-    justify-content: center;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
 main section:last-child > div{
 
     flex-wrap: wrap;
-}
-main section:last-child article{
-    /*display: flex;*/
-    flex-direction: column;
-    flex-wrap: wrap;
+    padding: 10px;
+    justify-content:space-between;
 }
 
+main section:last-child article{
+    flex-wrap:wrap;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main section article >div {
+    flex-wrap:wrap;
+    padding: 10px;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+main section article >header{
+    height: 33px;
+}
+
+main section article >div >div {
+    flex-wrap:wrap;
+    padding: 10px;
+    flex-direction:row;
+}
+
+
+
+button{
+    border-radius: 5px;
+}
+
+footer{
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;/* BOLDER*/
+    color: #555555;
+}
 
 
 /*==========  Mobile First Method  ==========*/
@@ -281,16 +240,30 @@ main section:last-child article{
         visibility: visible;
         display: none;
     }
-    nav ul li{}
-    main section:last-child > div{
+
+    nav ul {
         flex-direction: column;
+        flex-wrap: wrap;
+    }
+    nav ul li{
+        width: 100%;
+    }
+    nav {
+        height: 90px;
     }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
     nav ul li{
-        background-color: #a47171;
+        background-color: #2e6da4;
+
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav {
+        flex-direction: column;
     }
 }
 
@@ -307,30 +280,16 @@ main section:last-child article{
     nav ul li{
         background-color: darkseagreen;
     }
-}
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-    main section{
+    nav ul {
         flex-direction: row;
     }
 }
 
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -343,6 +302,9 @@ main section:last-child article{
  * Hide visually and from screen readers
  */
 
+.flex-container {
+    display: flex;
+}
 .hidden {
     display: none !important;
 }
@@ -420,9 +382,9 @@ main section:last-child article{
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -503,5 +465,5 @@ main section:last-child article{
     h3 {
         page-break-after: avoid;
     }
-
 }
+

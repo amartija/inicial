@@ -11,7 +11,7 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.css?v=20170428">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -19,35 +19,39 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <header><h1>Bienvenido a mi Web</h1></header>
+
 
         <nav>
 
             <ul>
                 <li><a href ="#listas_ordenadas">Listas ordenadas</a></li>
                 <li><a href ="#tabla_series">Tablas</a></li>
-                <li><a href ="#tabla_series">Tablas</a></li>
+                <li><a href ="#section_multimedia">Multimedia</a></li>
+                <li><a href ="#ejer1">Ejercicio 1</a></li>
             </ul>
         </nav>
+        <div id="wrapper">
+            <header><h1>Bienvenido a mi Web</h1></header>
         <main>
             <section id="listas_ordenadas">
                 <header><h2>Listas ordenadas</h2></header>
                 <div>
                     Lista de series:
                     <ol>
-                        <li>Series animacion</li>
-                            <ol>
+                        <li>Series animacion
+                            <ul>
                                 <li>Futurama</li>
                                 <li>Dragoi Bola</li>
-                            </ol>
-                        <li>Series no animadas</li>
+                            </ul>
+                        </li>
+                        <li>Series no animadas
 
                             <ol>
                                 <li>Mr.Robot</li>
                                 <li>Fringe</li>
 
                              </ol>
-                        <li>Mr.Robot</li>
+                        </li>
 
                     </ol>
                 </div>
@@ -70,6 +74,11 @@
                             <td rowspan ="2">30 min.</td>
                         </tr>
                         <tr>
+
+                            <td>2010-2013</td>
+
+                        </tr>
+                        <tr>
                             <td>Padre de Familia</td>
                             <td>199-Actualidad</td>
                             <td>30 min.</td>
@@ -78,7 +87,7 @@
                     <tfoot>
                         <tr>
                             <td>Numero de series</td>
-                            <td> col:span= "2"</td>
+                            <td colspan= "2">2</td>
                         </tr>
 
                     </tfoot>
@@ -104,7 +113,7 @@
 
                     </div>
                 </div>
-                <div class ="">
+                <div>
                     <video controls >
 
                     </video>
@@ -114,33 +123,511 @@
             <section id ="ejer1">
                 <header><h2>Ejercicio flotante</h2></header>
                 <div class="clearfix">
-                    <article >
+                    <article>
                         <header><h3></h3></header>
                         <div>Bloque para imagen</div>
                         <div>
-                            <div>fsdfsfsf</div>
-                            <button>Leer Mas</button>
+                            <div >fsdfsfsf</div>
+                            <button>Mas</button>
                         </div>
                     </article>
                     <article>
                         <header><h3></h3></header>
-                        <div></div>
-                        <div>fsdfsfsf</div>
-                        <button>Leer Mas</button>
+                        <div >Bloque para imagen</div>
+                        <div>
+                            <div>fsdfsfsf</div>
+                            <button>Mas</button>
+                        </div>
                     </article>
 
                     <article>
                         <header><h3></h3></header>
-                        <div></div>
-                        <div>fsdfsfsf</div>
-                        <button>Leer Mas</button>
+                        <div>Bloque para imagen</div>
+                        <div>
+                            <div>fsdfsfsf</div>
+                            <button>Mas</button>
+                        </div>
                     </article>
                 </div>
             </section>
+            <section>
+                <div class = "flex-container">
+                <article class = "flex-container invisible">
+                    <header><h3>Enrique</h3></header>
+                    <div class="flex-container">
+                        <div><img src="#" alt="Foto de Enrique"</div>
+                        <div>
+                            <p>
+                                Nombre completo:
+                            </p>
+                            <p>
+                                Poblacion:
+                            </p>
+                            <p>
+
+                                Codigo Postal:
+                            </p>
+                            <p>
+                                Email:
+                            </p>
+                            <div>
+                                <a href="#" download>Ver CV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        Observaciones:
+
+                    </div>
+                </article>
+
+                <article class = "flex-container invisible">
+                    <header><h3>Enrique</h3></header>
+                    <div class="flex-container">
+                        <div><img src="#" alt="Foto de Enrique"</div>
+                        <div>
+                            <p>
+                                Nombre completo:
+                            </p>
+                            <p>
+                                Poblacion:
+                            </p>
+                            <p>
+
+                                Codigo Postal:
+                            </p>
+                            <p>
+                                Email:
+                            </p>
+                            <div>
+                                <a href="#" download>Ver CV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        Observaciones:
+
+                    </div>
+                </article>
+
+                <article class = "flex-container">
+                    <header><h3>Enrique</h3></header>
+                    <div class="flex-container">
+                        <div><img src="#" alt="Foto de Enrique"</div>
+                        <div>
+                            <p>
+                                Nombre completo:
+                            </p>
+                            <p>
+                                Poblacion:
+                            </p>
+                            <p>
+
+                                Codigo Postal:
+                            </p>
+                            <p>
+                                Email:
+                            </p>
+                            <div>
+                                <a href="#" download>Ver CV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        Observaciones:
+
+                    </div>
+                </article>
+
+                <article class = "flex-container">
+                    <header><h3>Enrique</h3></header>
+                    <div class="flex-container">
+                        <div><img src="#" alt="Foto de Enrique"</div>
+                        <div>
+                            <p>
+                                Nombre completo:
+                            </p>
+                            <p>
+                                Poblacion:
+                            </p>
+                            <p>
+
+                                Codigo Postal:
+                            </p>
+                            <p>
+                                Email:
+                            </p>
+                            <div>
+                                <a href="#" download>Ver CV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        Observaciones:
+
+                    </div>
+                </article>
+
+                <article class = "flex-container">
+                    <header><h3>Enrique</h3></header>
+                    <div class="flex-container">
+                        <div><img src="#" alt="Foto de Enrique"</div>
+                        <div>
+                            <p>
+                                Nombre completo:
+                            </p>
+                            <p>
+                                Poblacion:
+                            </p>
+                            <p>
+
+                                Codigo Postal:
+                            </p>
+                            <p>
+                                Email:
+                            </p>
+                            <div>
+                                <a href="#" download>Ver CV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        Observaciones:
+
+                    </div>
+                </article>
+
+                <article class = "flex-container">
+                    <header><h3>Enrique</h3></header>
+                    <div class="flex-container">
+                        <div><img src="#" alt="Foto de Enrique"</div>
+                        <div>
+                            <p>
+                                Nombre completo:
+                            </p>
+                            <p>
+                                Poblacion:
+                            </p>
+                            <p>
+
+                                Codigo Postal:
+                            </p>
+                            <p>
+                                Email:
+                            </p>
+                            <div>
+                                <a href="#" download>Ver CV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        Observaciones:
+
+                    </div>
+                </article>
+
+                <article class = "flex-container">
+                    <header><h3>Enrique</h3></header>
+                    <div class="flex-container">
+                        <div><img src="#" alt="Foto de Enrique"</div>
+                        <div>
+                            <p>
+                                Nombre completo:
+                            </p>
+                            <p>
+                                Poblacion:
+                            </p>
+                            <p>
+
+                                Codigo Postal:
+                            </p>
+                            <p>
+                                Email:
+                            </p>
+                            <div>
+                                <a href="#" download>Ver CV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        Observaciones:
+
+                    </div>
+                </article>
+
+                <article class = "flex-container">
+                    <header><h3>Enrique</h3></header>
+                    <div class="flex-container">
+                        <div><img src="#" alt="Foto de Enrique"</div>
+                        <div>
+                            <p>
+                                Nombre completo:
+                            </p>
+                            <p>
+                                Poblacion:
+                            </p>
+                            <p>
+
+                                Codigo Postal:
+                            </p>
+                            <p>
+                                Email:
+                            </p>
+                            <div>
+                                <a href="#" download>Ver CV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        Observaciones:
+
+                    </div>
+                </article>
+
+                <article class = "flex-container">
+                    <header><h3>Enrique</h3></header>
+                    <div class="flex-container">
+                        <div><img src="#" alt="Foto de Enrique"</div>
+                        <div>
+                            <p>
+                                Nombre completo:
+                            </p>
+                            <p>
+                                Poblacion:
+                            </p>
+                            <p>
+
+                                Codigo Postal:
+                            </p>
+                            <p>
+                                Email:
+                            </p>
+                            <div>
+                                <a href="#" download>Ver CV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        Observaciones:
+
+                    </div>
+                </article>
+
+                <article class = "flex-container">
+                    <header><h3>Enrique</h3></header>
+                    <div class="flex-container">
+                        <div><img src="#" alt="Foto de Enrique"</div>
+                        <div>
+                            <p>
+                                Nombre completo:
+                            </p>
+                            <p>
+                                Poblacion:
+                            </p>
+                            <p>
+
+                                Codigo Postal:
+                            </p>
+                            <p>
+                                Email:
+                            </p>
+                            <div>
+                                <a href="#" download>Ver CV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        Observaciones:
+
+                    </div>
+                </article>
+
+                <article class = "flex-container">
+                    <header><h3>Enrique</h3></header>
+                    <div class="flex-container">
+                        <div><img src="#" alt="Foto de Enrique"</div>
+                        <div>
+                            <p>
+                                Nombre completo:
+                            </p>
+                            <p>
+                                Poblacion:
+                            </p>
+                            <p>
+
+                                Codigo Postal:
+                            </p>
+                            <p>
+                                Email:
+                            </p>
+                            <div>
+                                <a href="#" download>Ver CV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        Observaciones:
+
+                    </div>
+                </article>
+
+                <article class = "flex-container">
+                    <header><h3>Enrique</h3></header>
+                    <div class="flex-container">
+                        <div><img src="#" alt="Foto de Enrique"</div>
+                        <div>
+                            <p>
+                                Nombre completo:
+                            </p>
+                            <p>
+                                Poblacion:
+                            </p>
+                            <p>
+
+                                Codigo Postal:
+                            </p>
+                            <p>
+                                Email:
+                            </p>
+                            <div>
+                                <a href="#" download>Ver CV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        Observaciones:
+
+                    </div>
+                </article>
+
+                <article class = "flex-container">
+                    <header><h3>Enrique</h3></header>
+                    <div class="flex-container">
+                        <div><img src="#" alt="Foto de Enrique"</div>
+                        <div>
+                            <p>
+                                Nombre completo:
+                            </p>
+                            <p>
+                                Poblacion:
+                            </p>
+                            <p>
+
+                                Codigo Postal:
+                            </p>
+                            <p>
+                                Email:
+                            </p>
+                            <div>
+                                <a href="#" download>Ver CV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        Observaciones:
+
+                    </div>
+                </article>
+
+                <article class = "flex-container">
+                    <header><h3>Enrique</h3></header>
+                    <div class="flex-container">
+                        <div><img src="#" alt="Foto de Enrique"</div>
+                        <div>
+                            <p>
+                                Nombre completo:
+                            </p>
+                            <p>
+                                Poblacion:
+                            </p>
+                            <p>
+
+                                Codigo Postal:
+                            </p>
+                            <p>
+                                Email:
+                            </p>
+                            <div>
+                                <a href="#" download>Ver CV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        Observaciones:
+
+                    </div>
+                </article>
+
+                <article class = "flex-container">
+                    <header><h3>Enrique</h3></header>
+                    <div class="flex-container">
+                        <div><img src="#" alt="Foto de Enrique"</div>
+                        <div>
+                            <p>
+                                Nombre completo:
+                            </p>
+                            <p>
+                                Poblacion:
+                            </p>
+                            <p>
+
+                                Codigo Postal:
+                            </p>
+                            <p>
+                                Email:
+                            </p>
+                            <div>
+                                <a href="#" download>Ver CV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        Observaciones:
+
+                    </div>
+                </article>
+
+                <article class = "flex-container">
+                    <header><h3>Enrique</h3></header>
+                    <div class="flex-container">
+                        <div><img src="#" alt="Foto de Enrique"</div>
+                        <div>
+                            <p>
+                                Nombre completo:
+                            </p>
+                            <p>
+                                Poblacion:
+                            </p>
+                            <p>
+
+                                Codigo Postal:
+                            </p>
+                            <p>
+                                Email:
+                            </p>
+                            <div>
+                                <a href="#" download>Ver CV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        Observaciones:
+
+                    </div>
+                </article>
+                </div>
+            </section>
         </main>
+
+
     <footer>
 
     </footer>
-
+    </div>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
     </body>
+
 </html>
